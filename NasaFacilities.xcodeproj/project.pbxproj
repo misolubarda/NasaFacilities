@@ -15,6 +15,12 @@
 		EBF6B6572423C07700298B69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBF6B6552423C07700298B69 /* LaunchScreen.storyboard */; };
 		EBF6B6622423C07700298B69 /* NasaFacilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF6B6612423C07700298B69 /* NasaFacilitiesTests.swift */; };
 		EBF6B66D2423C07700298B69 /* NasaFacilitiesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF6B66C2423C07700298B69 /* NasaFacilitiesUITests.swift */; };
+		EBF6B7312423D67E00298B69 /* DataLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF6B6A42423D23700298B69 /* DataLayer.framework */; };
+		EBF6B7322423D67E00298B69 /* DataLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBF6B6A42423D23700298B69 /* DataLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBF6B7342423D6D900298B69 /* UILayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF6B6FE2423D28A00298B69 /* UILayer.framework */; };
+		EBF6B7352423D6D900298B69 /* UILayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBF6B6FE2423D28A00298B69 /* UILayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBF6B7362423D83F00298B69 /* DomainLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF6B72B2423D2B800298B69 /* DomainLayer.framework */; };
+		EBF6B7372423D83F00298B69 /* DomainLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBF6B72B2423D2B800298B69 /* DomainLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +38,65 @@
 			remoteGlobalIDString = EBF6B6462423C07500298B69;
 			remoteInfo = NasaFacilities;
 		};
+		EBF6B6A32423D23700298B69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBF6B69E2423D23700298B69 /* DataLayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EBF6B6842423D23600298B69;
+			remoteInfo = DataLayer;
+		};
+		EBF6B6A52423D23700298B69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBF6B69E2423D23700298B69 /* DataLayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EBF6B68D2423D23600298B69;
+			remoteInfo = DataLayerTests;
+		};
+		EBF6B6FD2423D28A00298B69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBF6B6F82423D28900298B69 /* UILayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EBF6B6DE2423D28900298B69;
+			remoteInfo = UILayer;
+		};
+		EBF6B6FF2423D28A00298B69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBF6B6F82423D28900298B69 /* UILayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EBF6B6E72423D28900298B69;
+			remoteInfo = UILayerTests;
+		};
+		EBF6B72A2423D2B800298B69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBF6B7252423D2B700298B69 /* DomainLayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EBF6B70B2423D2B700298B69;
+			remoteInfo = DomainLayer;
+		};
+		EBF6B72C2423D2B800298B69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBF6B7252423D2B700298B69 /* DomainLayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EBF6B7142423D2B700298B69;
+			remoteInfo = DomainLayerTests;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EBF6B7332423D67E00298B69 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EBF6B7372423D83F00298B69 /* DomainLayer.framework in Embed Frameworks */,
+				EBF6B7352423D6D900298B69 /* UILayer.framework in Embed Frameworks */,
+				EBF6B7322423D67E00298B69 /* DataLayer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EBF6B6472423C07500298B69 /* NasaFacilities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasaFacilities.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +113,9 @@
 		EBF6B6682423C07700298B69 /* NasaFacilitiesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NasaFacilitiesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF6B66C2423C07700298B69 /* NasaFacilitiesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaFacilitiesUITests.swift; sourceTree = "<group>"; };
 		EBF6B66E2423C07700298B69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBF6B69E2423D23700298B69 /* DataLayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DataLayer.xcodeproj; path = DataLayer/DataLayer.xcodeproj; sourceTree = "<group>"; };
+		EBF6B6F82423D28900298B69 /* UILayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UILayer.xcodeproj; path = UILayer/UILayer.xcodeproj; sourceTree = "<group>"; };
+		EBF6B7252423D2B700298B69 /* DomainLayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DomainLayer.xcodeproj; path = DomainLayer/DomainLayer.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +123,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBF6B7362423D83F00298B69 /* DomainLayer.framework in Frameworks */,
+				EBF6B7342423D6D900298B69 /* UILayer.framework in Frameworks */,
+				EBF6B7312423D67E00298B69 /* DataLayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +149,14 @@
 		EBF6B63E2423C07500298B69 = {
 			isa = PBXGroup;
 			children = (
+				EBF6B69E2423D23700298B69 /* DataLayer.xcodeproj */,
+				EBF6B7252423D2B700298B69 /* DomainLayer.xcodeproj */,
+				EBF6B6F82423D28900298B69 /* UILayer.xcodeproj */,
 				EBF6B6492423C07500298B69 /* NasaFacilities */,
 				EBF6B6602423C07700298B69 /* NasaFacilitiesTests */,
 				EBF6B66B2423C07700298B69 /* NasaFacilitiesUITests */,
 				EBF6B6482423C07500298B69 /* Products */,
+				EBF6B7302423D67E00298B69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +210,40 @@
 			path = NasaFacilitiesUITests;
 			sourceTree = "<group>";
 		};
+		EBF6B69F2423D23700298B69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBF6B6A42423D23700298B69 /* DataLayer.framework */,
+				EBF6B6A62423D23700298B69 /* DataLayerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBF6B6F92423D28900298B69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBF6B6FE2423D28A00298B69 /* UILayer.framework */,
+				EBF6B7002423D28A00298B69 /* UILayerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBF6B7262423D2B700298B69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBF6B72B2423D2B800298B69 /* DomainLayer.framework */,
+				EBF6B72D2423D2B800298B69 /* DomainLayerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBF6B7302423D67E00298B69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +254,7 @@
 				EBF6B6432423C07500298B69 /* Sources */,
 				EBF6B6442423C07500298B69 /* Frameworks */,
 				EBF6B6452423C07500298B69 /* Resources */,
+				EBF6B7332423D67E00298B69 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -226,6 +335,20 @@
 			mainGroup = EBF6B63E2423C07500298B69;
 			productRefGroup = EBF6B6482423C07500298B69 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EBF6B69F2423D23700298B69 /* Products */;
+					ProjectRef = EBF6B69E2423D23700298B69 /* DataLayer.xcodeproj */;
+				},
+				{
+					ProductGroup = EBF6B7262423D2B700298B69 /* Products */;
+					ProjectRef = EBF6B7252423D2B700298B69 /* DomainLayer.xcodeproj */;
+				},
+				{
+					ProductGroup = EBF6B6F92423D28900298B69 /* Products */;
+					ProjectRef = EBF6B6F82423D28900298B69 /* UILayer.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				EBF6B6462423C07500298B69 /* NasaFacilities */,
@@ -234,6 +357,51 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EBF6B6A42423D23700298B69 /* DataLayer.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DataLayer.framework;
+			remoteRef = EBF6B6A32423D23700298B69 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EBF6B6A62423D23700298B69 /* DataLayerTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DataLayerTests.xctest;
+			remoteRef = EBF6B6A52423D23700298B69 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EBF6B6FE2423D28A00298B69 /* UILayer.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = UILayer.framework;
+			remoteRef = EBF6B6FD2423D28A00298B69 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EBF6B7002423D28A00298B69 /* UILayerTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UILayerTests.xctest;
+			remoteRef = EBF6B6FF2423D28A00298B69 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EBF6B72B2423D2B800298B69 /* DomainLayer.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DomainLayer.framework;
+			remoteRef = EBF6B72A2423D2B800298B69 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EBF6B72D2423D2B800298B69 /* DomainLayerTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DomainLayerTests.xctest;
+			remoteRef = EBF6B72C2423D2B800298B69 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EBF6B6452423C07500298B69 /* Resources */ = {
