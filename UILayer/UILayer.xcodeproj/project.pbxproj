@@ -13,6 +13,7 @@
 		EBF6B6EF2423D28900298B69 /* UILayer.h in Headers */ = {isa = PBXBuildFile; fileRef = EBF6B6E12423D28900298B69 /* UILayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EBF6B73F2423D86000298B69 /* DomainLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF6B73E2423D86000298B69 /* DomainLayer.framework */; };
 		EBF6B7402423D86000298B69 /* DomainLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBF6B73E2423D86000298B69 /* DomainLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBF6B7452424E97500298B69 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF6B7442424E97500298B69 /* AppCoordinator.swift */; };
 		EBF6B7472424EBE600298B69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF6B7462424EBE600298B69 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		EBF6B6EC2423D28900298B69 /* UILayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILayerTests.swift; sourceTree = "<group>"; };
 		EBF6B6EE2423D28900298B69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBF6B73E2423D86000298B69 /* DomainLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DomainLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBF6B7442424E97500298B69 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		EBF6B7462424EBE600298B69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +98,7 @@
 			children = (
 				EBD4EE182424F61E0076E550 /* ContentView.swift */,
 				EBF6B7462424EBE600298B69 /* SceneDelegate.swift */,
+				EBF6B7442424E97500298B69 /* AppCoordinator.swift */,
 				EBF6B6E12423D28900298B69 /* UILayer.h */,
 				EBF6B6E22423D28900298B69 /* Info.plist */,
 			);
@@ -230,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBF6B7452424E97500298B69 /* AppCoordinator.swift in Sources */,
 				EBF6B7472424EBE600298B69 /* SceneDelegate.swift in Sources */,
 				EBD4EE192424F61E0076E550 /* ContentView.swift in Sources */,
 			);
