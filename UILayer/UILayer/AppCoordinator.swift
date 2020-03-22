@@ -8,10 +8,12 @@
 
 import SwiftUI
 
+public protocol AppCoordinatorDependencies {}
+
 class AppCoordinator {
     let window: UIWindow
 
-    init(windowScene: UIWindowScene) {
+    init(windowScene: UIWindowScene, dependencies: AppCoordinatorDependencies) {
         let window = UIWindow(windowScene: windowScene)
         self.window = window
     }

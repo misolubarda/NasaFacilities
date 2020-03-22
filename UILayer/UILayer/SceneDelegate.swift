@@ -9,6 +9,12 @@
 import UIKit
 import SwiftUI
 
+public protocol SceneDelegateDependencies: AppCoordinatorDependencies {}
+
+public protocol SceneDelegateDependenciesSource {
+    var dependencies: SceneDelegateDependencies { get }
+}
+
 public class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var appCoordinator: AppCoordinator?
 
@@ -18,8 +24,9 @@ public class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Use a UIHostingController as window root view controller.
-        if let windowScene = scene as? UIWindowScene {
-            appCoordinator = AppCoordinator(windowScene: windowScene)
+        if let windowScene = scene as? UIWindowScene, let appDelegate = UIApplication.shared.delegate as? SceneDelegateDependenciesSource {
+            let dependencies = appDelegate.dependencies
+            appCoordinator = AppCoordinator(windowScene: windowScene, dependencies: dependencies)
             appCoordinator?.start()
         }
     }
